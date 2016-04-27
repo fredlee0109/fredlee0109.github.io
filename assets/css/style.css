@@ -1,0 +1,217 @@
+.sidebar-container {
+	position: fixed;
+	width: 170px;
+	height: 100%;
+	background-color: #75616B;
+	-webkit-transform: translateX(-170px);
+	-webkit-transition: all 0.3s;
+	z-index: 10;
+}
+
+.sidebar-item {
+	font-weight: 700;
+	font-size: 16px;
+	color: white;
+	padding: 15px 20px;
+}
+
+body, html {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+	-webkit-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: 'Raleway', sans-serif;
+}
+
+.myphoto {
+	/*height: 400px;*/
+	height: 100%;
+	/*width: 100%;*/
+	width: 40%;
+	position: fixed;
+	z-index: -1;
+	padding-left: 5%;
+	margin-left: -200px;
+}
+
+.page-wrapper {
+	display: block;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+img {
+	height: 100%;
+}
+
+.background {
+	position: relative;
+	left: 40%;
+	height: 100%;
+	width: 60%;
+	background-color: #DCE4F7;
+}
+
+.profile {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	color: #473B41;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#name {
+	font-size: 50px;
+}
+
+#year {
+	margin-top: 10px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+#aboutme {
+	font-size: 20px;
+}
+
+#nav-toggle { 
+	position: absolute; 
+	left: 50%; top: 50%; 
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px; 
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+.sidebar-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.title {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	background-color: #BFCFF7;
+	margin-right: auto;
+	font-size: 40px;
+	padding-left: 250px;
+}
+
+.blogs {
+	height: 100%;
+	color: #473B41;
+}
+
+.blogs ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.articles {
+	position: relative;
+	background-color: #DCE4F7;
+	top: 100px;
+	width: 100%;
+	height: 100%;
+	padding-left: 230px;
+	padding-top: 50px;
+}
+
+.article {
+	border-style: solid;
+	width: 70%;
+}
+
+.article-title {
+	padding-top: 15px;
+	padding-left: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.article-title a {
+	color: #473B41;
+}
+
+.article-content {
+	padding-top: 15px;
+	padding-left: 20px;
+	font-size: 25px;
+}
+
+.article-support {
+	padding-top: 15px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+/* jQuery Manipulation Classes */
+
+#myphoto {
+	position: relative;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper-active, .button-active {
+	-webkit-transform: translateX(170px);
+	-moz-transform: translateX(170px);
+	transform: translateX(170px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
