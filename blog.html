@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Blog Fred Lee</title>
+        <title>Life et al.</title>
         <link rel="stylesheet" href="assets/css/blogstyle.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
@@ -9,6 +9,16 @@
         <script src = "assets/js/script.js"></script>
     </head>
     <body>
+        <!-- Facebook Like Button -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=462841737254767";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
         <!-- Sidebar Hamburger Icon -->
         <div id = "sidebar-button">
             <a id="nav-toggle">
@@ -96,6 +106,8 @@
                             </div>
                             <div class = "article-support">
                                 written by Fred Lee
+                                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                                <iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo rawurlencode(get_permalink()); ?>&layout=button_count&show_faces=false&width=100&action=like&font=verdana&colorscheme=light&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
                             </div>
                         </li>
                         <li class = "article">
