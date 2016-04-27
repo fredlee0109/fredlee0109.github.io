@@ -9,6 +9,16 @@
         <script src = "assets/js/script.js"></script>
     </head>
     <body>
+        <!-- Facebook Like Button -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=462841737254767";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
         <!-- Sidebar Hamburger Icon -->
         <div id = "sidebar-button">
             <a id="nav-toggle">
@@ -96,6 +106,7 @@
                             </div>
                             <div class = "article-support">
                                 written by Fred Lee
+                                <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                                 <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffredlee0109.github.io%2F&width=126&layout=button_count&action=like&show_faces=true&share=true&height=46&appId=462841737254767" width="126" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                             </div>
                         </li>
