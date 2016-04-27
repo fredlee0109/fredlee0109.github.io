@@ -138,9 +138,8 @@ a {
 	padding-top: 5px;
 	padding-bottom: 10px;
 	background-color: #759BFB;
-	margin-right: auto;
+	text-align: center;
 	font-size: 40px;
-	padding-left: 250px;
 	z-index: 10;
 }
 
@@ -154,7 +153,7 @@ a {
 }
 
 .blogs ul {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	margin-top: 10px;
@@ -164,10 +163,10 @@ a {
 	position: relative;
 	background-color: #DCE4F7;
 	top: 50px;
-	width: 100%;
+    max-width: 680px;
 	height: 100%;
-	padding-left: 230px;
 	padding-top: 50px;
+	margin: 0 auto;
 }
 
 .article {
@@ -175,12 +174,12 @@ a {
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border: 2px solid #000000;
-	margin-right: 450px;
+	/*margin-right: 450px;*/
 	margin-bottom: 15px;
 }
 
 .real-article {
-	width: 70%;
+	/*width: 70%;*/
 	margin-bottom: 15px;
 }
 
@@ -240,6 +239,10 @@ a {
 
 .readmore a:hover {
 	opacity: .8;
+}
+
+#disqus_thread {
+	width: 950px;
 }
 
 /* jQuery Manipulation Classes */
