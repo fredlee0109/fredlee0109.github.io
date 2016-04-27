@@ -137,7 +137,7 @@ a {
 	top: 0;
 	padding-top: 5px;
 	padding-bottom: 10px;
-	background-color: #BFCFF7;
+	background-color: #759BFB;
 	margin-right: auto;
 	font-size: 40px;
 	padding-left: 250px;
@@ -171,6 +171,15 @@ a {
 }
 
 .article {
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 2px solid #000000;
+	width: 70%;
+	margin-bottom: 15px;
+}
+
+.real-article {
 	width: 70%;
 	margin-bottom: 15px;
 }
@@ -180,6 +189,16 @@ a {
 	padding-left: 20px;
 	font-size: 30px;
 	font-weight: bold;
+}
+
+.article-title a {
+	transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.article-title a:hover {
+	opacity: .5;
 }
 
 .article-title a {
@@ -194,10 +213,30 @@ a {
 }
 
 .article-support {
-	padding-top: 15px;
-	padding-left: 20px;
-	padding-bottom: 15px;
+	margin-top: 10px;
+	padding: 5px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	margin-right: 10px;
 	font-size: 15px;
+	/*border-style: solid;*/
+	background-color: #BFCFF7;
+}
+
+.readmore {
+	margin-top: 5px;
+}
+
+.readmore a {
+	padding-left: 20px;
+	color: #D34017;
+	transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.readmore a:hover {
+	opacity: .8;
 }
 
 /* jQuery Manipulation Classes */
