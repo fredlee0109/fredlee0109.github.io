@@ -207,11 +207,15 @@ a {
 }
 
 .article-content {
-	text-indent: 30pt;
-	padding-top: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 25px;
+
+}
+
+.article-content p {
+	color: #473B41;
+	text-indent: 30pt;
 }
 
 .article-support {
