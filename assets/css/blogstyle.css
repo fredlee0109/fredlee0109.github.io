@@ -265,7 +265,8 @@ a {
 }
 
 #disqus_thread {
-	max-width: 680px;
+    max-width: 675px;
+    margin-left: 15px;
 }
 
 /* jQuery Manipulation Classes */
