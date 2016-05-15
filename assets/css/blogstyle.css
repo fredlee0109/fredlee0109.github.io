@@ -25,7 +25,6 @@ body, html {
 	font-smoothing: antialiased;
 	font-family: 'Raleway', sans-serif;
 	background-color: #FFFFFF;
-	color: #473B41;
 }
 
 .myphoto {
@@ -68,9 +67,12 @@ img {
 	margin-right: 10px;
 }
 
+li a, .title a {
+	color: white;
+}
+
 a {
 	text-decoration: none;
-	color: white;
 }
 
 #name {
