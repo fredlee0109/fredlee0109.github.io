@@ -185,6 +185,10 @@ a {
 	margin-bottom: 15px;
 }
 
+code {
+	background-color: rgba(128, 128, 128, 0.14);
+}
+
 .article-title {
 	padding-top: 15px;
 	padding-left: 20px;
