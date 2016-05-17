@@ -19,7 +19,6 @@ body, html {
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
-	min-width: 960px;
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
@@ -28,9 +27,7 @@ body, html {
 }
 
 .myphoto {
-	/*height: 400px;*/
 	height: 100%;
-	/*width: 100%;*/
 	width: 40%;
 	position: fixed;
 	z-index: -1;
@@ -151,15 +148,6 @@ a {
 	color: #FFFFF;
 }
 
-#blogbar {
-	position: fixed;
-	top: 100px;
-	right: 50px;
-	height: 85%;
-	padding-left: 20px;
-	border-left: 1px solid #68B3AF;
-}
-
 .barpoint {
 	cursor: pointer;
 	color: #999;
@@ -199,25 +187,34 @@ a {
 	margin-top: 10px;
 }
 
+@media (min-width: 1150px) {
+	#blogbar {
+		position: fixed;
+		top: 100px;
+		right: 50px;
+		height: 85%;
+		padding-left: 20px;
+		border-left: 1px solid #68B3AF;
+	}
+}
+
+@media (max-width: 1150px) {
+    #blogbar {
+        display: none;
+    }
+}
+
 .articles {
 	position: relative;
-	/* background-color: #DCE4F7; */
 	top: 50px;
 	max-width: 700px;
 	height: 100%;
 	padding-top: 50px;
 	margin: 0 auto;
+	display: block;
 }
 
 .article {
-	border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	margin-bottom: 15px;
-}
-
-.real-article {
-	/*width: 70%;*/
 	margin-bottom: 15px;
 }
 
@@ -268,14 +265,6 @@ code {
 	text-decoration-color: #E18728; 
 }
 
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
 .article-content p {
 	color: #473B41;
 	text-indent: 30pt;
@@ -323,15 +312,11 @@ code {
 
 /* jQuery Manipulation Classes */
 
-#myphoto {
-	position: relative;
-}
-
 .no-scroll {
 	overflow: hidden;
 }
 
-.wrapper-active, .button-active {
+.button-active {
 	-webkit-transform: translateX(170px);
 	-moz-transform: translateX(170px);
 	transform: translateX(170px);
