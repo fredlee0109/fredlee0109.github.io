@@ -214,6 +214,14 @@ a {
 	font-size: 25px;
 }
 
+.article-content a {
+	color: #473B41;
+}
+
+.article-content a:hover {
+	color: #D34017;
+}
+
 #underline {
 	text-decoration: underline;
 	-webkit-text-decoration-color: #E18728;
