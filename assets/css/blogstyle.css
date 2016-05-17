@@ -190,12 +190,18 @@ a {
 @media (min-width: 1150px) {
 	#blogbar {
 		position: fixed;
-		top: 100px;
 		right: 50px;
-		height: 85%;
+		height: calc(100% - 100px);
+		padding-top: 100px;
 		padding-left: 20px;
-		border-left: 1px solid #68B3AF;
 	}
+}
+
+.blogbarline {
+	margin-left: -20px;
+	position: fixed;
+	height: calc(100% - 135px);
+	border-left: 1px solid #68B3AF;
 }
 
 @media (max-width: 1150px) {
