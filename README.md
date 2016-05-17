@@ -1,2 +1,8 @@
-Currently, only supporting Desktop view. I have no plans to make it support Mobile view, as of now.
-<a href="http://fredlee0109.github.io/"> my site </a>.</p>
+My portfolio and blog website, all coded from scratch. Hosted via NameCheap at http://fred-lee.com
+</br>
+###Snapshot of my website as of May 16th, 2016
+####Main
+<img src="assets/img/preview_1.jpg">
+</br>
+####Blog
+<img src="assets/img/preview_2.jpg">

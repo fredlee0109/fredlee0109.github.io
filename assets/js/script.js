@@ -24,12 +24,9 @@ $(document).ready(function() {
 
   /** blog filter */
   $('.barpoint').click(function(event) {
-        $('.barpoint').css('color', '#999');
-        $('.all').css('color', '#87BDB1');
         $(this).parent().children().css('color', '#999');
         $(this).css('color', '#87BDB1');
-        var id = $(this).attr('id');
-        var category = "." + id;
+        var category = "." + $(this).attr('id');
         if ($(this).hasClass('all')) {
             $('.article').show();
         } else {
