@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  /** side bar animation */
   $("#sidebar-button").click(function() {
     if ($(".sidebar-container").hasClass("sidebar-active")) {
       $("body").removeClass("no-scroll");
@@ -21,4 +21,20 @@ $(document).ready(function() {
       $(".sidebar-container").removeClass("sidebar-active");
     }
   })
+
+  /** blog filter */
+  $('.barpoint').click(function(event) {
+        $('.barpoint').css('color', '#999');
+        $('.all').css('color', '#87BDB1');
+        $(this).parent().children().css('color', '#999');
+        $(this).css('color', '#87BDB1');
+        var id = $(this).attr('id');
+        var category = "." + id;
+        if ($(this).hasClass('all')) {
+            $('.article').show();
+        } else {
+            $('.article').hide();
+            $(category).show();
+        }
+    });
 });
