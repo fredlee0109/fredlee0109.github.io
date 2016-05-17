@@ -6,3 +6,5 @@ My portfolio and blog website, all coded from scratch. Hosted via NameCheap at h
 </br>
 ####Blog
 <img src="assets/img/preview_2.jpg">
+</br>
+Copyright © 2016 Fred Lee. All rights reserved.
