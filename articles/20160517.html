@@ -97,7 +97,57 @@
                                 <p>
                                     Without going into details, here is what the code above accomplishes:
                                     </br></br>
-                                    d
+                                    Whenever a filter (named as ".barpoint" in the code) is clicked, it turns every option except the clicked to be #999 color. #999 is a hex color code for gray. Technically, #999 is a shorthand for #999999, which has an RGB value of (153, 153, 153). Also, it turns the option that is clicked to be #87BDB1, which is the turquoise color.
+                                </p>
+                                <p>
+                                    <div id="underline">RGB Color Value</div>
+                                </p>
+                                <p>
+                                    RGB color model is an additive color model in which red, green, blue light are added togehter in various ways to reproduce a broad array of colors. So an RGB value of (153, 153, 153) means the red has a value of 153, green has a value of 153, and blue has a value of 153. The 153 value here means that it has 153/255 percentage of that color. If you want to learn more deeply of each line of code, continue reading. Else, you may end here to save yourself some headaches.
+                                </p>
+                                <div id="underline">
+                                    <code>$('.barpoint').click(function(event))</code>
+                                </div>
+                                <p>
+                                    This essentially runs the entire code snippet whenever a filter is clicked. Nothing more, nothing less.
+                                </p>
+                                <div id="underline">
+                                    <code>
+                                        $(this).parent().children().css('color', '#999')
+                                        </br>
+                                        $(this).css('color','#87BDB1')
+                                    </code>
+                                </div>
+                                <p>
+                                    When a filter is clicked, have all other options turn into #999 color (which we learned from above that it stands for a gray color). Then turn the clicked filter to be #87BDB1 color. This is to tell the user that they have successfully chosen the filter by differentiating colors.
+                                </p>
+                                    <div id="underline"><code>var category = "." + $(this).attr('id')</code></div>
+                                <p>
+                                    This might be a little tricky. We first initialized a variable called <code>category</code> and we are assigning a value into the variable. The value is a String, concatenated by "." and <code>$(this).attr('id')</code>. The latter essentially grabs the clicked filter's attribute called 'id'. For instance, if a user clicks on a filter called 'Computer Science', the filter has an attribute id called 'cs,' as you can see in the snippet below:
+                                    </br></br>
+                                    <img src="../assets/img/20160517_2.jpg">
+                                    Concatenate "." and that attribute called 'id', and we assign the value to the variable called <code>category</code>. For instance, in this specific case, we would assign the value of <code>.cs</code>
+                                </p>
+                                <p>
+                                    <div id="underline">Why the <code>.</code>?</div>
+                                </p>
+                                <p>
+                                    In CSS, a div class can have <code>class</code> type and a <code>id</code> type. To select a div by its class, you would call <code>#(name of the class)</code>, and to select a div by its id, you would call <code>.(name of the id)</code>. So since we are trying to select the id attribute of the div, we use <code>.</code> notation.
+                                </p>
+                                <p>
+                                    <div id="underline">If / else</div>
+                                </p>
+                                <p>
+                                    If and else are the funadmental conditional statments in computer programming. They are usually formatted as follows: if (condition) { consequence} else {alternative}. In translated English, it means if the condition is true, run the consequence. Else, run the alternative. Applying this knowledge to this snippet of code: </br></br>
+                                    <img src="../assets/img/20160517_3.jpg">
+                                    </br></br>
+                                    We have the condition = <code>$(this).hasClass('all')</code>, consequence = <code>$('.article').show();</code>, and alternative = <code>$('.article').hide(); $(category).show();</code>
+                                </p>
+                                <p>
+                                    <div id="underline">And the rest</div>
+                                </p>
+                                <p>
+                                    With the knowledge that we've built up to this point, it is easy to figure out what condition, consequence, and the alternative do. Try to figure them out by yourself! (Hint: try to just read them in English and see if they make sense).
                                 </p>
                             </div>
                             <div class = "article-support">
